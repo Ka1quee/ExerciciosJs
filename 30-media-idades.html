@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+<script>
+let nome;
+let idade;
+let idades = [];
+let totalIdades = 0;
+
+do {
+    nome = prompt("Digite seu nome (ou 'pare' para sair)");
+    if (nome !== "pare") {
+        idade = parseInt(prompt("Digite sua idade"));
+        if (!isNaN(idade)) {
+            idades.push(idade);
+            totalIdades += idade; 
+        } else {
+            alert("Idade inválida! Por favor, insira um número válido.");
+        }
+    }
+} while (nome !== "pare");
+
+if (idades.length > 0) {
+    let media = totalIdades / idades.length; 
+    alert("Nome: " + nome + "\nÚltima Idade inserida: " + idade + "\nNúmero de idades inseridas: " + idades.length + "\nMédia das idades: " + media);
+}
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

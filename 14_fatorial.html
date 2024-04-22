@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+</head>
+<script>
+let num = parseInt(prompt("Digite um número para calcular o fatorial:"));
+let resultado = 1;
+
+if (num >= 0) {
+    while (num > 0) {
+        resultado *= num; 
+        num--; 
+    }
+    document.write("O fatorial é: " + resultado);
+} else {
+    document.write("Número inválido. Por favor, insira um número não negativo.");
+}
+
+
+</script>
+<body>
+    
+</body>
+</html>

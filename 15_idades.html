@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idades</title>
+</head>
+<script>
+let nome = "";
+let idade = "";
+let idades = [];
+let soma = 0;
+
+do {
+    nome = prompt("Digite seu nome");
+    if (nome.toLowerCase() === "fim") {
+        break; // Encerra o loop se o usuário digitar "fim"
+    }
+
+    idade = parseInt(prompt("Digite sua idade"));
+    if (isNaN(idade)) {
+        continue; // Pula para a próxima iteração se a entrada da idade for inválida
+    }
+
+    idades.push(idade);
+    soma += idade;
+} while (nome.toLowerCase() !== "fim");
+
+if (idades.length > 0) {
+    let media = soma / idades.length;
+    document.write(`Média das idades: ${media.toFixed(2)}`);
+} else {
+    document.write("Nenhuma idade válida foi fornecida.");
+}
+
+
+</script>
+<body>
+    
+</body>
+</html>

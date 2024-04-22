@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <script>
+
+        let idades = []
+        let contador = 1
+        
+        while(contador <= 5){
+
+            let idade = parseInt(prompt("Digite um numero"))
+            contador++
+            idades.push(idade)
+        }
+
+        let media = (idades[0]+idades[1]+idades[2]+idades[3]+idades[4])/5
+
+        document.write(`Idade 1 = ${idades[0]}<br/>
+                        Idade 2 = ${idades[1]}<br/>
+                        Idade 3 = ${idades[2]}<br/>
+                        Idade 4 = ${idades[3]}<br/>
+                        Idade 5 = ${idades[4]}<br/>
+                        Média: ${media}`)
+    </script>
+</body>
+</html>

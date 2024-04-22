@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primos</title>
+</head>
+
+<body>
+
+    <script>
+        let number = prompt("Digite um número:");
+        let isPrime = true;
+        let divisor = 2;
+
+        while (divisor < number) {
+            if (number % divisor === 0) {
+                isPrime = false;
+                break;
+            }
+            divisor++;
+        }
+
+        if (isPrime && number > 1) {
+            alert(number + " é primo.");
+        } else {
+            alert(number + " não é primo.");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
